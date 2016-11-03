@@ -18,6 +18,7 @@
 
 @implementation ItemsViewController
 
+// string property containing the value for the reuse identifier.  
 NSString *TABLE_VIEW_CELL_REUSE_ID = @"UITableViewCell";
 
 -(instancetype)initWithStore: (ItemStore *)theStore {
