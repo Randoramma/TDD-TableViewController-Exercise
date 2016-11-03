@@ -67,7 +67,7 @@ static ItemStore *_sharedStore = nil; // provide a static property of the store.
 }
 
 -(BNRItem *) createItem {
-    BNRItem * item = [[BNRItem alloc] init];
+    BNRItem * item = [BNRItem randomItem];
     [_privateItems addObject:item];
     return item;
 }

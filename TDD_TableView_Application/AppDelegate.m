@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ItemsViewController.h"
+#import "ItemStore.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ItemsViewController *rootView = [[ItemsViewController alloc] init];
+    ItemsViewController *rootView = [[ItemsViewController alloc] initWithStore:[ItemStore sharedStore]];
     
     self.window.rootViewController = rootView;
     rootView.view.backgroundColor = [UIColor whiteColor];

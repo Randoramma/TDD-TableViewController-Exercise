@@ -15,6 +15,8 @@
 - (instancetype)initWithItemName:(NSString *)name
                   valueInDollars:(int)value
                     serialNumber:(NSString *)sNumber;
+
+- (NSString *)description; 
  
 @property (nonatomic, copy) NSString *itemName;
 @property (nonatomic, copy) NSString *serialNumber;

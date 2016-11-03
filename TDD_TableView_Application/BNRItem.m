@@ -72,8 +72,7 @@
                      serialNumber:@""];
 }
 
-- (NSString *)description
-{
+- (NSString *)description {
     NSString *descriptionString =
         [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
                             self.itemName,
