@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AppDelegate.h"
+#import "ItemsViewController.h"
 
 @interface TDD_TableView_ApplicationTests : XCTestCase
 
@@ -24,16 +26,19 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+-(void) testSelfRootView_ShouldBeItemsViewController {
+ 
+    UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+    UIViewController *itemsVC = [[ItemsViewController alloc] init];
+    
+    XCTAssertEqual(rootViewController.class, itemsVC.class);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void) testBackgroundColor_shouldBeWhite {
+    UIView *rootView = [[[[UIApplication sharedApplication] keyWindow] rootViewController] view];
+    
+    XCTAssertEqual(rootView.backgroundColor, [UIColor whiteColor]);
 }
+
 
 @end

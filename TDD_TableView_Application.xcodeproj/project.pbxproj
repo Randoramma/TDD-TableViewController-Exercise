@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		4E7956291DCA45B600F8096F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7956281DCA45B600F8096F /* main.m */; };
 		4E79562C1DCA45B600F8096F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E79562B1DCA45B600F8096F /* AppDelegate.m */; };
-		4E79562F1DCA45B600F8096F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E79562E1DCA45B600F8096F /* ViewController.m */; };
 		4E7956321DCA45B600F8096F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7956301DCA45B600F8096F /* Main.storyboard */; };
 		4E7956341DCA45B600F8096F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7956331DCA45B600F8096F /* Assets.xcassets */; };
 		4E7956371DCA45B600F8096F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7956351DCA45B600F8096F /* LaunchScreen.storyboard */; };
 		4E7956421DCA45B600F8096F /* TDD_TableView_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7956411DCA45B600F8096F /* TDD_TableView_ApplicationTests.m */; };
+		4E79565B1DCA4C1800F8096F /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E79565A1DCA4C1800F8096F /* ItemsViewController.m */; };
+		4E79565D1DCA4C8000F8096F /* ItemsViewController_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E79565C1DCA4C8000F8096F /* ItemsViewController_Tests.m */; };
+		4E7956631DCA532500F8096F /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7956621DCA532500F8096F /* BNRItem.m */; };
+		4E7956651DCA536800F8096F /* BNRItem_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7956641DCA536800F8096F /* BNRItem_Tests.m */; };
+		4E79566A1DCA612000F8096F /* ItemStore_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7956691DCA612000F8096F /* ItemStore_Tests.m */; };
+		4E79566D1DCA613200F8096F /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E79566C1DCA613200F8096F /* ItemStore.m */; };
+		4E7956731DCA81DA00F8096F /* ItemStoreFake.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7956721DCA81DA00F8096F /* ItemStoreFake.m */; };
+		4E7956741DCA909900F8096F /* ItemStore.h in Resources */ = {isa = PBXBuildFile; fileRef = 4E79566B1DCA613200F8096F /* ItemStore.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +38,6 @@
 		4E7956281DCA45B600F8096F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E79562A1DCA45B600F8096F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4E79562B1DCA45B600F8096F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4E79562D1DCA45B600F8096F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E79562E1DCA45B600F8096F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E7956311DCA45B600F8096F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E7956331DCA45B600F8096F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E7956361DCA45B600F8096F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +45,17 @@
 		4E79563D1DCA45B600F8096F /* TDD_TableView_ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_TableView_ApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7956411DCA45B600F8096F /* TDD_TableView_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDD_TableView_ApplicationTests.m; sourceTree = "<group>"; };
 		4E7956431DCA45B600F8096F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7956591DCA4C1800F8096F /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemsViewController.h; path = ../ItemsViewController.h; sourceTree = "<group>"; };
+		4E79565A1DCA4C1800F8096F /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemsViewController.m; path = ../ItemsViewController.m; sourceTree = "<group>"; };
+		4E79565C1DCA4C8000F8096F /* ItemsViewController_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController_Tests.m; sourceTree = "<group>"; };
+		4E7956611DCA532500F8096F /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		4E7956621DCA532500F8096F /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		4E7956641DCA536800F8096F /* BNRItem_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem_Tests.m; sourceTree = "<group>"; };
+		4E7956691DCA612000F8096F /* ItemStore_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore_Tests.m; sourceTree = "<group>"; };
+		4E79566B1DCA613200F8096F /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemStore.h; path = ../ItemStore.h; sourceTree = "<group>"; };
+		4E79566C1DCA613200F8096F /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemStore.m; path = ../ItemStore.m; sourceTree = "<group>"; };
+		4E7956711DCA81DA00F8096F /* ItemStoreFake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStoreFake.h; sourceTree = "<group>"; };
+		4E7956721DCA81DA00F8096F /* ItemStoreFake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStoreFake.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +97,9 @@
 		4E7956261DCA45B600F8096F /* TDD_TableView_Application */ = {
 			isa = PBXGroup;
 			children = (
-				4E79562A1DCA45B600F8096F /* AppDelegate.h */,
-				4E79562B1DCA45B600F8096F /* AppDelegate.m */,
-				4E79562D1DCA45B600F8096F /* ViewController.h */,
-				4E79562E1DCA45B600F8096F /* ViewController.m */,
-				4E7956301DCA45B600F8096F /* Main.storyboard */,
-				4E7956331DCA45B600F8096F /* Assets.xcassets */,
-				4E7956351DCA45B600F8096F /* LaunchScreen.storyboard */,
-				4E7956381DCA45B600F8096F /* Info.plist */,
+				4E79566E1DCA614000F8096F /* Controller */,
+				4E79566F1DCA614F00F8096F /* Model */,
+				4E7956701DCA615E00F8096F /* View */,
 				4E7956271DCA45B600F8096F /* Supporting Files */,
 			);
 			path = TDD_TableView_Application;
@@ -106,9 +117,55 @@
 			isa = PBXGroup;
 			children = (
 				4E7956411DCA45B600F8096F /* TDD_TableView_ApplicationTests.m */,
+				4E79565C1DCA4C8000F8096F /* ItemsViewController_Tests.m */,
 				4E7956431DCA45B600F8096F /* Info.plist */,
+				4E7956641DCA536800F8096F /* BNRItem_Tests.m */,
+				4E7956691DCA612000F8096F /* ItemStore_Tests.m */,
+				4E7956751DCA917400F8096F /* Mocks */,
 			);
 			path = TDD_TableView_ApplicationTests;
+			sourceTree = "<group>";
+		};
+		4E79566E1DCA614000F8096F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E7956591DCA4C1800F8096F /* ItemsViewController.h */,
+				4E79565A1DCA4C1800F8096F /* ItemsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4E79566F1DCA614F00F8096F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E79562A1DCA45B600F8096F /* AppDelegate.h */,
+				4E79562B1DCA45B600F8096F /* AppDelegate.m */,
+				4E7956381DCA45B600F8096F /* Info.plist */,
+				4E7956611DCA532500F8096F /* BNRItem.h */,
+				4E7956621DCA532500F8096F /* BNRItem.m */,
+				4E79566B1DCA613200F8096F /* ItemStore.h */,
+				4E79566C1DCA613200F8096F /* ItemStore.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4E7956701DCA615E00F8096F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E7956301DCA45B600F8096F /* Main.storyboard */,
+				4E7956331DCA45B600F8096F /* Assets.xcassets */,
+				4E7956351DCA45B600F8096F /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4E7956751DCA917400F8096F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4E7956711DCA81DA00F8096F /* ItemStoreFake.h */,
+				4E7956721DCA81DA00F8096F /* ItemStoreFake.m */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7956741DCA909900F8096F /* ItemStore.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E79562F1DCA45B600F8096F /* ViewController.m in Sources */,
+				4E79565B1DCA4C1800F8096F /* ItemsViewController.m in Sources */,
+				4E7956631DCA532500F8096F /* BNRItem.m in Sources */,
 				4E79562C1DCA45B600F8096F /* AppDelegate.m in Sources */,
 				4E7956291DCA45B600F8096F /* main.m in Sources */,
+				4E79566D1DCA613200F8096F /* ItemStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7956651DCA536800F8096F /* BNRItem_Tests.m in Sources */,
 				4E7956421DCA45B600F8096F /* TDD_TableView_ApplicationTests.m in Sources */,
+				4E79566A1DCA612000F8096F /* ItemStore_Tests.m in Sources */,
+				4E79565D1DCA4C8000F8096F /* ItemsViewController_Tests.m in Sources */,
+				4E7956731DCA81DA00F8096F /* ItemStoreFake.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

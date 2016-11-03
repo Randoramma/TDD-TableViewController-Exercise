@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ItemsViewController.h
 //  TDD_TableView_Application
 //
 //  Created by Randy McLain on 11/2/16.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ItemStore; 
+@interface ItemsViewController : UITableViewController
 
-@interface ViewController : UIViewController
-
-
+-(instancetype)initWithStore: (ItemStore *)theStore; 
 @end
-
