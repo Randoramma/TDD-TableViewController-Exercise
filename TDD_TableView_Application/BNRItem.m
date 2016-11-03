@@ -16,6 +16,12 @@
 
 @implementation BNRItem
 
+
+/**
+ Class method returning a random method with randomly generated properties.
+
+ @return BNRItem.  
+ */
 + (id)randomItem
 {
     // Create an array of three adjectives
@@ -47,6 +53,16 @@
     return newItem;
 }
 
+
+/**
+ Parameterized initializer
+
+ @param name    the name of the item.
+ @param value   the value of the item in dollars.
+ @param sNumber the alphanemueric serial number for the object.
+
+ @return BNRItem.
+ */
 - (id)initWithItemName:(NSString *)name
         valueInDollars:(int)value
           serialNumber:(NSString *)sNumber
@@ -66,12 +82,24 @@
     return self;
 }
 
+
+/**
+ BNRItem initializer.
+
+ @return BNRItem.
+ */
 - (id)init {
     return [self initWithItemName:@"Item"
                    valueInDollars:0
                      serialNumber:@""];
 }
 
+
+/**
+ The Descriptor of the BNRItem.  ItemName (Serial#): Worth $value, recorded on date
+
+ @return NSString the descriptor.
+ */
 - (NSString *)description {
     NSString *descriptionString =
         [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",

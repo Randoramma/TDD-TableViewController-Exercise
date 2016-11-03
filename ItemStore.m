@@ -66,6 +66,12 @@ static ItemStore *_sharedStore = nil; // provide a static property of the store.
     return self;
 }
 
+
+/**
+ Method allowing creating BNRitems at random and inserting them into the array store.
+
+ @return the BNRItem created.  
+ */
 -(BNRItem *) createItem {
     BNRItem * item = [BNRItem randomItem];
     [_privateItems addObject:item];
