@@ -3,7 +3,6 @@
 //  TDD_TableView_Application
 //
 //  Created by Randy McLain on 11/2/16.
-//  Copyright © 2016 National Center for Telehealth & Technology. All rights reserved.
 //
 
 #import "ItemsViewController.h"
@@ -18,7 +17,7 @@
 
 @implementation ItemsViewController
 
-// string property containing the value for the reuse identifier.  
+// string property containing the value for the reuse identifier.
 NSString *TABLE_VIEW_CELL_REUSE_ID = @"UITableViewCell";
 
 -(instancetype)initWithStore: (ItemStore *)theStore {
